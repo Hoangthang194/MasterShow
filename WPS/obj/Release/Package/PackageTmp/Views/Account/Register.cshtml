@@ -1,0 +1,47 @@
+﻿@model WPS.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<main aria-labelledby="title mt-20">
+
+    <div class="d-flex justify-content-center">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <h4 class="text-center mt-20">Tạo tài khoản</h4>
+            <hr />
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="">
+        <div class="row mb-3">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 col-form-label ms-2" })
+            <div class="col-md-9">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control ms-2", @required = "required" })
+            </div>
+        </div>
+        <div class="row mb-3">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label ms-2" })
+            <div class="col-md-9">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control ms-2", @required = "required" })
+            </div>
+        </div>
+        <div class="row mb-3">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 col-form-label ms-2" })
+            <div class="col-md-9">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control ms-2", @required = "required" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <input type="submit" value="Đăng ký" class="btn btn-outline-dark" />
+            </div>
+        </div>
+    </div>
+        }
+    </div>
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

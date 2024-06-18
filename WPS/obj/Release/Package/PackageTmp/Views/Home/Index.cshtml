@@ -1,0 +1,323 @@
+﻿<!-- Slier bar -->
+@model WPS.Models.ViewHomeModelcs
+<style>
+    .social-icons {
+        position: fixed;
+        bottom: 100px; /* Cách mép trên của màn hình 10px */
+        right: 10px; /* Cách mép phải của màn hình 10px */
+        z-index: 1000; /* Đảm bảo phần tử này luôn nằm trên cùng */
+        padding: 10px; /* Thêm khoảng đệm bên trong */
+        border-radius: 5px; /* Bo tròn các góc */
+    }
+
+        .social-icons ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Khoảng cách giữa các biểu tượng */
+        }
+
+        .social-icons li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons i {
+            font-size: 40px; /* Kích thước biểu tượng */
+            color: #f60; /* Màu sắc biểu tượng */
+        }
+
+            .social-icons i:hover {
+                color: #f60; /* Màu sắc khi hover */
+            }
+</style>
+<section class="popular-categories section-padding">
+    <div class="wow fadeIn animated">
+        <div class="carausel-4-columns-cover position-relative d-flex justify-content-center">
+            <div class="carausel-4-columns" id="carausel-4-columns">
+                @foreach (var item in Model.Events)
+                {
+                    <div class="card-1">
+                        <figure class=" img-hover-scale overflow-hidden">
+                            <a href="@Url.Action("Details", "Home", new { code = item.Id_Post })"><img src="@Url.Content(item.Id_Image)" alt=""></a>
+                        </figure>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="main" style="margin-top: 60px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-20 text-center text-md-start">
+                <h2 class="intro">TẬN HƯỞNG CHƯƠNG TRÌNH</h2>
+                <h2 class="intro">ĐẲNG CẤP NHẤT, ĐÃ MẮT NHẤT</h2>
+                <h3 class="intro_child mt-10">TẠI SAO BẠN CHƯA THỬ?</h3>
+                <button type="button" class="btn btn-primary mt-10 border-0">Liên hệ ngay</button>
+            </div>
+            <div class="d-block d-lg-none">
+                <hr class="d-block d-lg-none" style="width: 100%;">
+            </div>
+            <div class="col-12 col-md-6 mt-10 mb-20">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="~/Theme/images/Heo.png" alt="">
+                        <h5>Giá tốt</h5>
+                    </div>
+                    <div class="col text-center mt-10">
+                        <img src="~/Theme/images/Home.png" alt="">
+                        <h5>Công ty sự kiện <br> hàng đầu Việt Nam</h5>
+                    </div>
+                    <div class="col text-center">
+                        <img src="~/Theme/images/Heart.png" alt="">
+                        <h5>99% khách hàng <br>hài lòng</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <hr class="d-block d-lg-none" style="width: 100%;">
+            </div>
+        </div>
+        <!-- Navi -->
+        <div class="row">
+            <div class="heading-tab-right wow fadeIn animated">
+                <ul class="nav nav-tabs right no-border" id="myTab-1" role="tablist">
+                    @foreach (var item in Model.CategoryProducts)
+                    {
+                        var isActive = item.Id == Model.code ? "active" : "";
+                        <li class="nav-item mt-5" role="presentation">
+                            <a id="@item.Id" href="@Url.Action("Index", "Home", new { code = item.Id })" class="nav-link @isActive">@item.Name</a>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+        <!-- Main -->
+        @{
+            var isShowEvent = Model.Events.Count == 0 ? "d-none" : "";
+        }
+        <div class="row  d-flex justify-content-center @isShowEvent">
+            <div class="row row-cols-1 row-cols-md-3 g-3 mt-40">
+                @foreach (var item in Model.Events)
+                {
+                    <div class="col">
+                        <a href="@Url.Action("Details", "Home", new { code = item.Id_Post })">
+                            <img class="rounded" src="@Url.Content(item.Id_Image)" alt="">
+                        </a>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mt-40 @isShowEvent">
+            <a class="custom-button text-center" href="@Url.Action("Evented", "Home")">Xem thêm</a>
+        </div>
+
+        <div class="container mt-40 d-block d-lg-none" style="height:200px;">
+            <h2 class="intro">DỊCH VỤ CỦA MASTER SHOW</h2>
+
+            <div id="carouselServices" class="carousel slide mt-10 text-center" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col">
+                            <h4>CHUYÊN NGHIỆP</h4>
+                            <p>Đơn vị tổ chức sự kiện chuyên nghiệp, đã tổ chức <br> hơn 1.000 sự kiện trên cả nước</p>
+                        </div>
+                        <div class="col">
+                            <h4>ĐẲNG CẤP</h4>
+                            <p>Tổ chức sự kiện đẳng cấp với sự góp mặt của những ngôi sao hàng đầu showbiz</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col">
+                            <h4>ĐỘC ĐÁO</h4>
+                            <p>Luôn sẵn sàng chuẩn bị các bộ kịch bản độc đáo, sáng tạo phù hợp với văn hóa doanh nghiệp</p>
+                        </div>
+                        <div class="col">
+                            <h4>CHUYÊN NGHIỆP</h4>
+                            <p>Tư vấn cho khách hàng hướng giải quyết vấn đề trước một cách mới mẻ, sáng tạo nhất</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col">
+                            <h4>ĐẲNG CẤP</h4>
+                            <p>Đội ngũ nhân viên trẻ trung, năng động, luôn mang đến cho khách hàng trải nghiệm tuyệt vời nhất.</p>
+                        </div>
+                        <div class="col">
+                            <h4>ĐỘC ĐÁO</h4>
+                            <p>Quy trình làm việc mới sale một sự kiện, đảm bảo theo sát tiến độ sự kiện</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="container text-center mt-40 d-block d-lg-none" style="height:100px;">
+            <h4 class="intro">ĐỐI TÁC</h4>
+
+            <div id="carouselPartners" class="carousel slide mt-10" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="rounded img-fluid" src="~/Theme/Website/logo-ACB.png" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img class="rounded img-fluid" src="~/Theme/Website/teckcombank-logo.jpg" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img class="rounded img-fluid" src="~/Theme/Website/logo-mbbank-cu.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="rounded img-fluid" src="~/Theme/Website/logo_shb.jpg" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img class="rounded img-fluid" src="~/Theme/Website/dongalogo.jfif" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img class="rounded img-fluid" src="~/Theme/Website/Vietans travel.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thêm các mục carousel khác nếu cần -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPartners" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPartners" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="text-center mt-40 d-none d-md-block">
+            <h2 class="intro">DỊCH VỤ CỦA MASTER SHOW</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-3 mt-10">
+                <div class="col">
+                    <h4>CHUYÊN NGHIỆP</h4>
+                    <p>Đơn vị tổ chức sự kiện chuyên nghiệp, đã tổ chức <br> hơn 1.000 sự kiện trên cả nước</p>
+                </div>
+                <div class="col">
+                    <h4>ĐẲNG CẤP</h4>
+                    <p>Tổ chức sự kiện đẳng cấp với sự góp mặt của những ngôi sao hàng đầu showbiz</p>
+                </div>
+                <div class="col">
+                    <h4>ĐỘC ĐÁO</h4>
+                    <p>Luôn sẵn sàng chuẩn bị các bộ kịch bản độc đáo, sang tạo phù hợp với văn hóa doanh nghiệp</p>
+                </div>
+                <div class="col">
+                    <h4>CHUYÊN NGHIỆP</h4>
+                    <p>Tư vấn cho khách hàng hướng giải quyết vấn đề trước một cách mới mẻ, sáng tạo nhất</p>
+                </div>
+                <div class="col">
+                    <h4>ĐẲNG CẤP</h4>
+                    <p>Đội ngũ nhân viên trẻ trung, năng động, luôn mang đến cho khách hàng trải nghiệm tuyệt vời nhất.</p>
+                </div>
+                <div class="col">
+                    <h4>ĐỘC ĐÁO</h4>
+                    <p>Quy trình làm việc mới sale một sự kiện, đảm bảo theo sát tiến độ sự kiện</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center mt-40 d-none d-md-block">
+            <h2 class="intro">ĐỐI TÁC</h2>
+            <div class="row row-cols-1 row-cols-md-6 g-3 mt-10">
+                <div class="col">
+                    <img src="~/Theme/Website/logo-ACB.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="~/Theme/Website/teckcombank-logo.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="~/Theme/Website/logo-mbbank-cu.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="~/Theme/Website/logo_shb.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="~/Theme/Website/dongalogo.jfif" alt="">
+                </div>
+                <div class="col">
+                    <img src="~/Theme/Website/Vietans travel.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        @{
+            var isShow = Model.Posts.Count == 0 ? "d-none" : "";
+        }
+        <div class=" @isShow">
+            <h4 class="intro text-center">BÀI VIẾT</h4>
+            <div class="row row-cols-2 row-cols-md-4 g-3 mt-10">
+                @foreach (var item in Model.Posts)
+                {
+                    <div class="col">
+                        <div class="card">
+                            @if (item.Images.Any())
+                            {
+                                <a href="@Url.Action("Details", "Home", new { code = item.Id })">
+                                    <img src="@Url.Content(item.Images.First().Url)" class="card-img-top" alt="...">
+                                </a>
+                            }
+                            <div class="card-body">
+                                <p class="card-text">@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mt-40 @isShow">
+            <a class="custom-button text-center" href="@Url.Action("ListPost", "Home")">Xem thêm</a>
+        </div>
+
+        <div class="social-icons">
+            <ul class="p-0 m-0 d-flex flex-column gap-2">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="tel:0365022208"><i class="fa-solid fa-phone"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+<script>
+    var activeElements = document.querySelectorAll('#menu .active');
+
+    // Lặp qua từng phần tử và loại bỏ class "active"
+    activeElements.forEach(function (element) {
+        element.classList.remove('active');
+    });
+    document.getElementById("home").classList.add("active");
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+

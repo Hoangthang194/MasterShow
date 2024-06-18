@@ -1,0 +1,88 @@
+﻿@model WPS.Service.PostService
+@{
+    var categories = ViewBag.Data as List<WPS.Core.Category>;
+}
+<style>
+    .back {
+        background-color: snow;
+        border: 1px solid #f60;
+        color: #f60;
+    }
+</style>
+@using (Html.BeginForm("Create", "Post", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="row">
+
+        <div class="col-8">
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-3 col-form-label fw-bold">Tiêu đề</label>
+                @Html.TextBoxFor(m => m.ObjDetail.Title, new { @placeholder = "Nhập tiêu đề bài viết", @class = "form-control ms-1", @required = "required" })
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-3 col-form-label fw-bold">Địa điểm tổ chức</label>
+                @Html.TextBoxFor(x => x.ObjDetail.Address, new { @placeholder = "Nhâp địa điểm", @class = "form-control ms-1", @required = "required" })
+            </div>
+            <div class="row mb-3">
+                <label for="inputDateTime" class="col-sm-3 col-form-label fw-bold">Ngày và giờ</label>
+                @Html.TextBoxFor(m => m.ObjDetail.Date, "{0:yyyy-MM-dd}", new { @type = "datetime-local", @class = "form-control ms-1" })
+            </div>
+
+            <div class="row mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Nội dung</label>
+                @Html.TextAreaFor(model => model.ObjDetail.Description, new { placeholder = "Mô tả nội dung", @class = "form-control ms-1", id = "exampleFormControlTextarea1", rows = "10", style = "min-height:200px;", @required = "required" })
+            </div>
+            <button class="btn btn-primary" type="submit">Tạo bài viết</button>
+            @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-primary back" })
+
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <ul class="list-group">
+                    <li class="list-group-item"><h4>Chuyên mục</h4></li>
+                    @foreach (var item in categories)
+                    {
+                        <li class="list-group-item d-flex">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" name="Category" type="checkbox" value="@item.Id" aria-label="Checkbox for following text input">
+                            </div>
+                            <div class="ms-2 d-flex align-items-sm-center">
+                                <h5>@item.Name</h5>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            <div class="card mt-20">
+                <ul class="list-group">
+                    <li class="list-group-item"><h4>Thêm 5 ảnh</h4></li>
+                        <li class="list-group-item d-flex">
+                             <input type="file" name="files" multiple required/>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const check = urlParams.get('check');
+    console.log(check);
+    if (check == "1") {
+        swal("Thành công!", {
+            icon: "success",
+        }).then(() => {
+            window.location.href = "#";
+        });
+    } else if (check == "0") {
+        swal("Có lỗi xảy ra!", {
+            icon: "error",
+        });
+    }
+    document.getElementById("Post").classList.add("text-active");
+
+</script>
+

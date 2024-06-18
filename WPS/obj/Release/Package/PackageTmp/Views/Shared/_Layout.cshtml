@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="~/Theme/Website/logoWeb.png">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/Theme/css/main.css">
+    <link rel="stylesheet" href="~/Theme/css/custom.css">
+</head>
+<body>
+    <!-- Thêm đoạn này vào phần body của _Layout.cshtml -->
+    <div id="loading" class="d-flex justify-content-center align-items-center" style="display:none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1000; background: rgba(255, 255, 255, 0.8); width: 100%; height: 100%;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+    <header class="header-area header-style-2 header-height-2">
+        <div class="header-bottom header-bottom-bg-color sticky-bar">
+            <div class="container">
+                <div class="header-wrap header-space-between position-relative">
+                    <div class="logo logo-width-1 d-block">
+                        <a href="@Url.Action("Index", "Home")"><img src="~/Theme/Website/logoWeb.png" alt="logo"></a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                        <div id="menu" class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a id="home" class="" href="@Url.Action("Index")">TRANG CHỦ</i></a>
+                                    </li>
+                                    <li>
+                                        <a id="about" class="" href="@Url.Action("About")">VỀ CHÚNG TÔI</i></a>
+                                    </li>
+                                    <li>
+                                        <a id="evented" class="" href="@Url.Action("Evented")">SỰ KIỆN ĐÃ LÀM</i></a>
+                                    </li>
+                                    <li>
+                                        <a id="lstpost" class="" href="@Url.Action("ListPost")">BÀI VIẾT</i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="hotline  d-lg-block">
+                        <div style="text-align: center;"><p><i class="fi-rs-headset"></i>1900 - 9999</p> <span style="font-weight: 500; color: #000;">(024 666 8888)</span> </div>
+                    </div>
+                    <div class="hotline d-none d-lg-block">
+                        <div style="text-align: center;">
+                            <a href="@Url.Action("Login", "Account")">
+                                <p class="text-center d-flex justify-content-center"><i class="fa-solid fa-user"></i></p>
+                                <span style="font-weight: 500; color: #000;">Đăng nhập admin</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-action-right d-block d-lg-none">
+                        <div class="header-action-2">
+                            <div class="header-action-icon-2 d-block d-lg-none">
+                                <div class="burger-icon burger-icon-white">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side bar -->
+    <div class="mobile-header-active mobile-header-wrapper-style">
+        <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-top">
+                <div class="logo logo-width-1 d-block">
+                    <a href="@Url.Action("Index", "Home")"><img src="~/Theme/Website/logoWeb.png" alt="logo"></a>
+                </div>
+                <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+                    <button class="close-style search-close">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-header-content-area" style="padding: 0 20px;">
+                <div class="mobile-search search-style-3 mobile-header-border">
+                </div>
+                <div class="mobile-menu-wrap mobile-header-border">
+                    <!-- mobile menu start -->
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li class="menu-item-has-children"><a href="@Url.Action("Index")">TRANG CHỦ</a>
+                            <li class="menu-item-has-children"><a href="@Url.Action("About")">VỀ CHÚNG TÔI</a>
+                            <li class="menu-item-has-children"><a href="@Url.Action("Evented")">SỰ KIỆN ĐÃ LÀM</a>
+                            <li class="menu-item-has-children"><a href="@Url.Action("ListPost")">BÀI VIẾT</a>
+                        </ul>
+                    </nav>
+                    <!-- mobile menu end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <footer class="main">
+        <section class="section-padding footer-mid mt-40">
+            <div class="container pt-15 pb-20">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget-about font-md mb-md-5 mb-lg-0">
+                            <div class="logo logo-width-1 wow fadeIn animated">
+                                <a href="@Url.Action("Index")"><img src="~/Theme/Website/logoWeb.png" alt="logo"></a>
+                            </div>
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">Công ty cổ phần</h5>
+                            <p class="wow fadeIn animated">
+                                Giấy phép kinh doanh số 0109921150 do sở KH&ĐT TP Hà Nội cấp ngày 03/03/2022
+                            </p>
+                            <p class="wow fadeIn animated">
+                                Giấy phép kinh doanh Lữ hành Quốc tế sô 01-1795/2022/TCDL-GP-LHQT
+                            </p>
+                            <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
+                            <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
+                                <a href="#"><img src="~/Theme/images/icon-facebook.svg" alt=""></a>
+                                <a href="#"><img src="~/Theme/images/icon-twitter.svg" alt=""></a>
+                                <a href="#"><img src="~/Theme/images/icon-instagram.svg" alt=""></a>
+                                <a href="#"><img src="~/Theme/images/icon-pinterest.svg" alt=""></a>
+                                <a href="#"><img src="~/Theme/images/icon-youtube.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none">
+                        <hr class="d-block d-lg-none" style="width: 100%;">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget-about font-md mb-md-5 mb-lg-0">
+                            <div class="logo logo-width-1 wow fadeIn animated">
+                            </div>
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">TRỤ SỞ CHÍNH</h5>
+                            <p class="wow fadeIn animated">
+                                Số 320, Lĩnh Nam, Hoàng Mai, Hà Nội
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">VĂN PHÒNG MTE TẠI PHÚ QUỐC</h5>
+                            <p class="wow fadeIn animated">
+                                Số 226A/1, Đường 30/4 KP1, Thị Trấn Dương Đông, Huyện Phú Quốc, Tỉnh Kiên Giang
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">VĂN PHÒNG MTE TẠI PHÚ QUỐC</h5>
+                            <p class="wow fadeIn animated">
+                                Số 206/4 Lê Văn Quới Quận Bình Tân
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none">
+                        <hr class="d-block d-lg-none" style="width: 100%;">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="">
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">VĂN PHÒNG MTE TẠI HÀ NAM</h5>
+                            <p class="wow fadeIn animated">
+                                Phù Vân, Thành Phố Phủ Lý, Tỉnh Hà Nam.
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">VĂN PHÒNG MTE TẠI TUYÊN QUANG</h5>
+                            <p class="wow fadeIn animated">
+                                Vinpearl Suối Khoáng, Mỹ Lâm, Thành Phố Tuyên Quang
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="mt-20 mb-10 fw-600 wow fadeIn animated">VĂN PHÒNG MTE TẠI THÁI BÌNH</h5>
+                            <p class="wow fadeIn animated">
+                                11/1 ngõ 46 Đốc Nhưỡng - Đề Thám, Thành Phố Thái Bình
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Theme/js/modernizr-3.6.0.min.js"></script>
+    <script src="~/Theme/js/jquery-3.6.0.min.js"></script>
+    <script src="~/Theme/js/jquery-migrate-3.3.0.min.js"></script>
+    <script src="~/Theme/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Theme/js/slick.js"></script>
+    <script src="~/Theme/js/jquery.syotimer.min.js"></script>
+    <script src="~/Theme/js/wow.js"></script>
+    <script src="~/Theme/js/jquery-ui.js"></script>
+    <script src="~/Theme/js/perfect-scrollbar.js"></script>
+    <script src="~/Theme/js/magnific-popup.js"></script>
+    <script src="~/Theme/js/select2.min.js"></script>
+    <script src="~/Theme/js/waypoints.js"></script>
+    <script src="~/Theme/js/counterup.js"></script>
+    <script src="~/Theme/js/jquery.countdown.min.js"></script>
+    <script src="~/Theme/js/images-loaded.js"></script>
+    <script src="~/Theme/js/isotope.js"></script>
+    <script src="~/Theme/js/scrollup.js"></script>
+    <script src="~/Theme/js/jquery.vticker-min.js"></script>
+    <script src="~/Theme/js/jquery.theia.sticky.js"></script>
+    <script src="~/Theme/js/jquery.elevatezoom.js"></script>
+    <!-- Template  JS -->
+    <script src="~/Theme/js/main.js"></script>
+    <script src="~/Theme/js/shop.js"></script>
+    <script>
+        setTimeout(function () {
+            var a = document.getElementById("loading");
+            if (a) {
+                a.setAttribute('style', 'display: none !important;');
+            }
+        }, 1000);
+
+    </script>
+</body>
+</html>

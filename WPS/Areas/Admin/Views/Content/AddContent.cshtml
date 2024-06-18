@@ -1,0 +1,54 @@
+﻿@model WPS.Service.ContentService
+@{
+}
+<style>
+    .back {
+        background-color: snow;
+        border: 1px solid #f60;
+        color: #f60;
+    }
+</style>
+@using (Html.BeginForm("AddContent", "Content", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(m => m.ObjDetail.Id_Post);
+    <div class="row">
+        <div class="col">
+            <div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-3 col-form-label fw-bold">Tiêu đề</label>
+                    @Html.TextBoxFor(m => m.ObjDetail.Title, new { @placeholder = "Nhập tiêu đề bài viết", @class = "form-control ms-1", @required = "required" })
+                </div>
+                <div class="row mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fw-bold">Nội dung</label>
+                    @Html.TextAreaFor(model => model.ObjDetail.Description, new { placeholder = "Mô tả nội dung", @class = "form-control ms-1", id = "exampleFormControlTextarea1", rows = "10", style = "min-height:200px;", @required = "required" })
+                </div>
+                <button class="btn btn-primary" type="submit">Thêm nội dung</button>
+                @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-primary back" })
+
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const check = urlParams.get('check');
+    console.log(check);
+    if (check == "1") {
+        swal("Thành công!", {
+            icon: "success",
+        }).then(() => {
+            window.location.href = "#";
+        });
+    } else if (check == "0") {
+        swal("Có lỗi xảy ra!", {
+            icon: "error",
+        });
+    }
+    document.getElementById("Post").classList.add("text-active");
+
+</script>
+
+

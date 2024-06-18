@@ -1,0 +1,51 @@
+﻿@model WPS.Models.ViewEventModel
+
+<main class="main" style="margin-top: 60px;">
+    <div class="container">
+        <!-- Navi -->
+        <div class="row">
+            <div class="heading-tab-right wow fadeIn animated">
+                <ul class="nav nav-tabs right no-border" id="myTab-1" role="tablist">
+                    @foreach (var item in Model.CategoryProducts)
+                    {
+                        var isActive = item.Id == Model.code ? "active" : "";
+                        <li class="nav-item mt-5 active" role="presentation">
+                            <a href="@Url.Action("Evented", "Home", new { code = item.Id })" class="nav-link @isActive">@item.Name</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <!-- Main -->
+
+        <div class="row  d-flex justify-content-center">
+            <div class="row row-cols-1 row-cols-md-3 g-3 mt-20">
+                @foreach (var item in Model.Events)
+                {
+                    <div class="col">
+                        <a href="@Url.Action("Details", "Home", new { code = item.Id_Post })">
+                            <img class="rounded" src="@Url.Content(item.Id_Image)" alt="">
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mt-40">
+            @for (int i = 1; i <= Model.numberPage; i++)
+            {
+                var isActive = Model.currentPage == i ? "custom-button" : "custom-button-not-Active";
+                <a href="@Url.Action("Evented", "Home", new { currentPage = i, code = Model.code })" class="@isActive ms-2 text-center">@i</a>
+            }
+        </div>
+    </div>
+</main>
+<script>
+    var activeElements = document.querySelectorAll('#menu .active');
+
+    // Lặp qua từng phần tử và loại bỏ class "active"
+    activeElements.forEach(function (element) {
+        element.classList.remove('active');
+    });
+    document.getElementById("evented").classList.add("active");
+</script>

@@ -1,0 +1,58 @@
+﻿@using WPS.Models
+
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+<main aria-labelledby="title">
+    <div class="row">
+        <div class="col-md-12">
+            <section id="loginForm">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <h4 class="text-center mt-20">Đăng nhập</h4>
+                                <hr />
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="mb-3">
+                                    <div class="row mb-3">
+                                        @Html.LabelFor(m => m.Email, new { @class = "col-md-3 col-form-label" })
+                                        <div class="col-md-9">
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @required = "required" })
+                                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        @Html.LabelFor(m => m.Password, new { @class = "col-md-3 col-form-label" })
+                                        <div class="col-md-9">
+                                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger", @required = "required" })
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="offset-md-3 col-md-9">
+                                            <input type="submit" value="Log in" class="btn btn-outline-dark w-100" />
+                                        </div>
+                                    </div>
+                                </div>
+                                @* Enable this once you have account confirmation enabled for password reset functionality
+                                    <p>
+                                        @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                                    </p>*@
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

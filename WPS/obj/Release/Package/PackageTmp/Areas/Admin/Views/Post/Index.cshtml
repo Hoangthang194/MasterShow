@@ -1,0 +1,79 @@
+﻿@model WPS.Service.PostService
+@{
+}
+<div class="d-flex justify-content-between">
+    @using (Html.BeginForm("Search", "Post", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            @Html.TextBoxFor(m => m.ObjDetail.Date, "{0:yyyy-MM-dd}", new { @type = "date", @class = "form-control ms-1" })
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    }
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
+        @Html.ActionLink("Tạo bài mới", "Create", null, new { @class = "btn btn-primary mb-2" })
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-10"><h4>Tiêu đề</h4></div>
+                        <div class="col-2  text-center"><h4>Hành động</h4></div>
+                    </div>
+                </li>
+                @foreach (var item in Model.ObjList)
+                {
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">
+                                    <a href="@Url.Action("Index","Content", new { id = item.Id })">@item.Title</a>
+                                </h4>
+                                <p class="card-text">@item.Description</p>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <a href="@Url.Action("Update", new { id = item.Id })">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="@Url.Action("Delete", new { id = item.Id })">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const check = urlParams.get('check');
+    console.log(check);
+    if (check == "1") {
+        swal("Thành công!", {
+            icon: "success",
+        }).then(() => {
+            window.location.href = "#";
+        });
+    } else if (check == "0") {
+        swal("Có lỗi xảy ra!", {
+            icon: "error",
+        });
+    }
+    document.getElementById("Post").classList.add("text-active");
+
+</script>
+

@@ -1,0 +1,157 @@
+﻿@model WPS.Models.ViewDetailModel
+@if (Model != null && Model.Post != null)
+{
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @foreach (var item in Model.Post.Images)
+                {
+                    <div class="carousel-item active">
+                        <img class="rounded" src="@Url.Content(item.Url)" alt="...">
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card card-active mt-sm-20 mt-md-0">
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-active">@Model.Post.Title</h2>
+                </div>
+                <div class="row mt-10">
+                    <h4><i class="fa-solid fa-location-dot me-3"></i>@Model.Post.Address</h4>
+                </div>
+
+                <div class="row mt-10">
+                    <h4><i class="fa-solid fa-clock me-3"></i>@Model.Post.Date</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-block d-lg-none">
+        <hr class="d-block d-lg-none" style="width: 100%;">
+    </div>
+    if (Model.Post.Images != null && Model.Post.Images.Count > 0)
+    {
+        <main class="main" style="margin-top: 30px;">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-3 mt-40 d-none d-md-flex">
+                    <div class="col">
+                        <img class="rounded" src="@Url.Content(Model.Post.Images[0].Url)" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row row-cols-1 row-cols-md-2 g-3">
+                            <div class="col">
+                                @if (Model.Post.Images != null && Model.Post.Images.Count > 1)
+                                {
+                                    <img class="rounded" src="@Url.Content(Model.Post.Images[1].Url)" alt="">
+                                }
+                            </div>
+                            <div class="col">
+                                @if (Model.Post.Images != null && Model.Post.Images.Count > 2)
+                                {
+                                    <img class="rounded" src="@Url.Content(Model.Post.Images[2].Url)" alt="">
+                                }
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-3" style="margin-top: -0.75rem;">
+                            <div class="col">
+                                @if (Model.Post.Images != null && Model.Post.Images.Count > 3)
+                                {
+                                    <img class="rounded" src="@Url.Content(Model.Post.Images[3].Url)" alt="">
+                                }
+                            </div>
+                            <div class="col">
+                                @if (Model.Post.Images != null && Model.Post.Images.Count > 4)
+                                {
+                                    <img class="rounded" src="@Url.Content(Model.Post.Images[4].Url)" alt="">
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-3 mt-30">
+                    <div class="col-12 col-md-8">
+                        <div class="row d-none d-md-block">
+                            <h2 class="text-active">@Model.Post.Title</h2>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <hr class="d-none d-md-block text-active" style="width: 100%;">
+                        </div>
+                        <div class="row">
+                            <p>@Model.Post.Description</p>
+                        </div>
+
+                        <div class="row mt-20">
+                            <div class="card p-0">
+                                <img src="@Url.Content(Model.Post.Images[1].Url)" class="card-img-top rounded" alt="..." width="100%">
+                                <div class="card-body">
+                                    <p class="card-text text-center">@Model.Post.Title</p>
+                                </div>
+                            </div>
+                        </div>
+                        @{ 
+                            int stt = 1;
+                        }
+                        @foreach (var item in Model.Post.Contents)
+                        {
+                            int index = stt > Model.Post.Images.Count ? 1 : stt;
+                            var sttString = stt.ToString() + "." + item.Title;
+                            <div class="row mt-20">
+                                <h4>@sttString</h4>
+                                <p style="word-wrap: break-word;text-align:justify;">
+                                    @item.Description
+                                    @*Sản xuất phim giới thiệu doanh nghiệp là một yếu tố quan trọng trong chiến lược marketing hiện đại của các tổ chức. Đó là cách trình bày sản phẩm, dịch vụ, tầm nhìn và sứ mệnh của doanh nghiệp một cách chuyên nghiệp và hấp dẫn để thu hút khách hàng tiềm năng. Đồng thời, nó cũng xây dựng một hình ảnh đáng tin cậy và gần gũi với khách hàng.
+                                    <br>
+                                    <br>
+                                    Quay phim giới thiệu doanh nghiệp giúp thể hiện hình ảnh chuyên nghiệp của doanh nghiệp, đồng thời giới thiệu rõ ràng các sản phẩm, dịch vụ và giá trị cốt lõi của công ty. Khách hàng thông qua video có thể hiểu thêm về đội ngũ nhân viên, cơ sở vật chất và môi trường làm việc của doanh nghiệp
+                                    <br>
+                                    <br>
+                                    Để đạt được hiệu quả tốt nhất, dịch vụ quay phim giới thiệu doanh nghiệp cần được thực hiện bởi các chuyên gia có kinh nghiệm trong lĩnh vực quay phim, biên tập video và sử dụng công nghiệ tiên tiến*@
+                                </p>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="card p-0">
+                                    <img src="@Url.Content(Model.Post.Images[index].Url)" class="card-img-top rounded" alt="..." width="100%">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">@item.Title</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-0 col-md-4 ps-5">
+                        <div class="row">
+                            <h3>TIN TỨC MỚI NHẤT</h3>
+                        </div>
+                        @foreach(var item in Model.lstPost)
+                        {
+                            <div class="row mt-20">
+                                <div class="col">
+                                    <a href="@Url.Action("Details", "Home", new { code = item.Id })">
+                                        <img class="rounded" src="@Url.Content(item.Images[0].Url)" alt="">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <p>@item.Title</p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </main>
+    }
+}

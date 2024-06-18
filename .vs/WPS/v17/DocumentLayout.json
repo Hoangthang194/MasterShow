@@ -1,0 +1,887 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Web_Tin_Tuc2\\WPS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|e:\\web_tin_tuc2\\wps\\wps\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\home\\listpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\home\\listpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\service\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\service\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\service\\homeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\service\\homeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\service\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\service\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\models\\modelpaging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\models\\modelpaging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\theme\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\theme\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\home\\evented.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\home\\evented.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\service\\contentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\service\\contentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\models\\viewpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\models\\viewpostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\models\\vieweventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\models\\vieweventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\models\\viewhomemodelcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\models\\viewhomemodelcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\content\\addcontent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\content\\addcontent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\content\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\content\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\repository\\mapping\\eventmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\repository\\mapping\\eventmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\models\\viewdetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\models\\viewdetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\repository\\mapping\\imagemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\repository\\mapping\\imagemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\repository\\mapping\\postmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\repository\\mapping\\postmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\post\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\post\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\event\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\event\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\homeadmin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\homeadmin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\categoryproduct\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\categoryproduct\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\categoryproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\categoryproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\controllers\\categoryproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\controllers\\categoryproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\repository\\common\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\repository\\common\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\core\\imageproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\core\\imageproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\core\\contentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\core\\contentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\core\\categoryproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\core\\categoryproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\core\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\core\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\core\\common\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\core\\common\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\core\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\core\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|E:\\Web_Tin_Tuc2\\WPS\\wps\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE7EE4E-432E-4C4F-8E4E-24D928DF9665}|WPS\\WPS.csproj|solutionrelative:wps\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 334,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:937283138:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Web.config",
+              "RelativeDocumentMoniker": "WPS\\Views\\Web.config",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Web.config",
+              "RelativeToolTip": "WPS\\Views\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-17T17:39:22.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModelPaging.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ModelPaging.cs",
+              "RelativeDocumentMoniker": "WPS\\Models\\ModelPaging.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ModelPaging.cs",
+              "RelativeToolTip": "WPS\\Models\\ModelPaging.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:34:58.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Web.config",
+              "RelativeDocumentMoniker": "WPS\\Web.config",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Web.config",
+              "RelativeToolTip": "WPS\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-14T14:30:16.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Home\\About.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-17T12:00:05.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListPost.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\ListPost.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Home\\ListPost.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\ListPost.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Home\\ListPost.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T05:36:41.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T14:37:22.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAABRwCkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T14:32:04.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Account\\Login.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:28:34.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Startup.cs",
+              "RelativeDocumentMoniker": "WPS\\Startup.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Startup.cs",
+              "RelativeToolTip": "WPS\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T18:52:10.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAEBlwAoBAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T05:01:41.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Home\\Details.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Home\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T09:01:00.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\PostService.cs",
+              "RelativeDocumentMoniker": "WPS\\Service\\PostService.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\PostService.cs",
+              "RelativeToolTip": "WPS\\Service\\PostService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAswEQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T10:21:17.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeService.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\HomeService.cs",
+              "RelativeDocumentMoniker": "WPS\\Service\\HomeService.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\HomeService.cs",
+              "RelativeToolTip": "WPS\\Service\\HomeService.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAIwC8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T10:29:29.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\EventService.cs",
+              "RelativeDocumentMoniker": "WPS\\Service\\EventService.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\EventService.cs",
+              "RelativeToolTip": "WPS\\Service\\EventService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAADwvy8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T12:04:06.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WPS\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WPS\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAHoBAAAAAAAAAAAkwLUBAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:31:32.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WPS\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WPS\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:23:10.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "bootstrap.bundle.js",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Scripts\\bootstrap.bundle.js",
+              "RelativeDocumentMoniker": "WPS\\Scripts\\bootstrap.bundle.js",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Scripts\\bootstrap.bundle.js",
+              "RelativeToolTip": "WPS\\Scripts\\bootstrap.bundle.js",
+              "ViewState": "AQIAABcAAAAAAAAAAAAjwCoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-15T12:03:48.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "custom.css",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Theme\\css\\custom.css",
+              "RelativeDocumentMoniker": "WPS\\Theme\\css\\custom.css",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Theme\\css\\custom.css",
+              "RelativeToolTip": "WPS\\Theme\\css\\custom.css",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAuwIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-15T04:44:57.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ContentService.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\ContentService.cs",
+              "RelativeDocumentMoniker": "WPS\\Service\\ContentService.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\ContentService.cs",
+              "RelativeToolTip": "WPS\\Service\\ContentService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:19:04.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewEventModel.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewEventModel.cs",
+              "RelativeDocumentMoniker": "WPS\\Models\\ViewEventModel.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewEventModel.cs",
+              "RelativeToolTip": "WPS\\Models\\ViewEventModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T10:02:48.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Evented.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\Evented.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Home\\Evented.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Home\\Evented.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Home\\Evented.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T04:46:38.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\CategoryService.cs",
+              "RelativeDocumentMoniker": "WPS\\Service\\CategoryService.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Service\\CategoryService.cs",
+              "RelativeToolTip": "WPS\\Service\\CategoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T10:06:05.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ViewPostModel.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewPostModel.cs",
+              "RelativeDocumentMoniker": "WPS\\Models\\ViewPostModel.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewPostModel.cs",
+              "RelativeToolTip": "WPS\\Models\\ViewPostModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T10:02:26.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ViewHomeModelcs.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewHomeModelcs.cs",
+              "RelativeDocumentMoniker": "WPS\\Models\\ViewHomeModelcs.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewHomeModelcs.cs",
+              "RelativeToolTip": "WPS\\Models\\ViewHomeModelcs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T04:24:16.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Event\\Create.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Event\\Create.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Event\\Create.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Event\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T17:30:06.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddContent.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Content\\AddContent.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Content\\AddContent.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Content\\AddContent.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Content\\AddContent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T09:36:59.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Event\\Index.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Event\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T09:37:54.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Content\\Index.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Content\\Index.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Content\\Index.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Content\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T09:37:11.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EventMap.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Mapping\\EventMap.cs",
+              "RelativeDocumentMoniker": "WPS\\Repository\\Mapping\\EventMap.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Mapping\\EventMap.cs",
+              "RelativeToolTip": "WPS\\Repository\\Mapping\\EventMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:37:51.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Post\\Create.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Post\\Create.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Post\\Create.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Post\\Create.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:44:40.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Controllers\\PostController.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\PostController.cs",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Controllers\\PostController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:34:27.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:45:12.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ViewDetailModel.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewDetailModel.cs",
+              "RelativeDocumentMoniker": "WPS\\Models\\ViewDetailModel.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Models\\ViewDetailModel.cs",
+              "RelativeToolTip": "WPS\\Models\\ViewDetailModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:55:55.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ImageMap.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Mapping\\ImageMap.cs",
+              "RelativeDocumentMoniker": "WPS\\Repository\\Mapping\\ImageMap.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Mapping\\ImageMap.cs",
+              "RelativeToolTip": "WPS\\Repository\\Mapping\\ImageMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:57:44.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PostMap.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Mapping\\PostMap.cs",
+              "RelativeDocumentMoniker": "WPS\\Repository\\Mapping\\PostMap.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Mapping\\PostMap.cs",
+              "RelativeToolTip": "WPS\\Repository\\Mapping\\PostMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:37:18.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Post\\Update.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Post\\Update.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Post\\Update.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Post\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:44:28.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Controllers\\EventController.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\EventController.cs",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Controllers\\EventController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwCwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:18:24.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Event\\Update.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\Event\\Update.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\Event\\Update.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\Event\\Update.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAEBVwCUAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T17:30:10.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HomeAdminController.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:58:28.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\CategoryProduct\\Update.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\CategoryProduct\\Update.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\CategoryProduct\\Update.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\CategoryProduct\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:38:58.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\HomeAdmin\\Update.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\HomeAdmin\\Update.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\HomeAdmin\\Update.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\HomeAdmin\\Update.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:46:07.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\CategoryProduct\\Create.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\CategoryProduct\\Create.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\CategoryProduct\\Create.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\CategoryProduct\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T16:38:48.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CategoryProductController.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\CategoryProductController.cs",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Controllers\\CategoryProductController.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Controllers\\CategoryProductController.cs",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Controllers\\CategoryProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:20:46.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "WPS\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T14:22:16.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T14:33:48.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Common\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "WPS\\Repository\\Common\\GenericRepository.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Repository\\Common\\GenericRepository.cs",
+              "RelativeToolTip": "WPS\\Repository\\Common\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:18:01.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ImageProduct.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\ImageProduct.cs",
+              "RelativeDocumentMoniker": "WPS\\Core\\ImageProduct.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\ImageProduct.cs",
+              "RelativeToolTip": "WPS\\Core\\ImageProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:17:23.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ContentModel.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\ContentModel.cs",
+              "RelativeDocumentMoniker": "WPS\\Core\\ContentModel.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\ContentModel.cs",
+              "RelativeToolTip": "WPS\\Core\\ContentModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:17:21.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CategoryProduct.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\CategoryProduct.cs",
+              "RelativeDocumentMoniker": "WPS\\Core\\CategoryProduct.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\CategoryProduct.cs",
+              "RelativeToolTip": "WPS\\Core\\CategoryProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:17:20.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\Category.cs",
+              "RelativeDocumentMoniker": "WPS\\Core\\Category.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\Category.cs",
+              "RelativeToolTip": "WPS\\Core\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:17:18.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IBaseEntity.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\Common\\IBaseEntity.cs",
+              "RelativeDocumentMoniker": "WPS\\Core\\Common\\IBaseEntity.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\Common\\IBaseEntity.cs",
+              "RelativeToolTip": "WPS\\Core\\Common\\IBaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:17:02.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "WPS\\Core\\Common\\BaseEntity.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Core\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "WPS\\Core\\Common\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:16:58.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "WPS\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "E:\\Web_Tin_Tuc2\\WPS\\WPS\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "WPS\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:12:01.682Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 66,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

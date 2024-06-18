@@ -1,0 +1,68 @@
+﻿@model WPS.Service.CategoryService
+@{ 
+    var lstData = Model?.ObjList;
+}
+<div class="row">
+    <div class="col-6">
+        @using (Html.BeginForm("Create", "HomeAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Tên</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(m=>m.ObjDetail.Name, new { @placeholder = "Đặt tên cho danh mục", @class = "w-100", @required = "required" })
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-3 col-form-label">Đường dẫn</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(x => x.ObjDetail.Type, new { @placeholder = "Nhâp đường dẫn", @class = "form-control w-100", @required = "required" })
+                </div>
+            </div>
+            <button type="submit">Tạo danh mục</button>
+        }
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                @foreach(var item in Model.ObjList)
+                {
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-10">@item.Name</div>
+                            <div class="col-2">
+                                <div class="row">
+                                    <div class="col"><a href="@Url.Action("Update", new {id = item.Id})"><i class="icon fa-solid fa-pen-to-square"></i></a></div>
+                                    <div class="col"><a href="@Url.Action("Delete", new {id = item.Id})"><i class="icon fa-solid fa-trash"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const check = urlParams.get('check');
+    console.log(check);
+    if (check == "1") {
+        swal("Thành công!", {
+            icon: "success",
+        }).then(() => {
+            window.location.href = "#";
+        });
+    } else if (check == "0") {
+        swal("Có lỗi xảy ra!", {
+            icon: "error",
+        });
+    }
+    document.getElementById("Category").classList.add("text-active");
+
+
+</script>
+

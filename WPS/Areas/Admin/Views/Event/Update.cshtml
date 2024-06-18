@@ -1,0 +1,83 @@
+﻿@model WPS.Service.EventService
+@{
+    var lstData = Model?.ObjList;
+    var categories = ViewBag.Data as List<WPS.Core.CategoryProduct>;
+    var posts = ViewBag.Post as List<WPS.Core.Post>;
+
+
+}
+<style>
+    .back {
+        background-color: snow;
+        border: 1px solid #f60;
+        color: #f60;
+    }
+</style>
+@using (Html.BeginForm("Update", "Event", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="row">
+        <div class="col-8">
+
+            @Html.HiddenFor(m => m.ObjDetail.Id)
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-3 col-form-label fw-bold">Tiêu đề</label>
+                @Html.TextBoxFor(m => m.ObjDetail.Title, new { @placeholder = "Nhập tiêu đề bài viết", @class = "form-control ms-1", @required = "required" })
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-3 col-form-label fw-bold">Chọn bài viết</label>
+                <select class="form-select" aria-label="Default select example" name="Id_post">
+
+                    @foreach (var item in posts)
+                    {
+                        var selected = item.Id == Model.ObjDetail.Id_Post ? "selected" : "";
+                        <option @selected value="@item.Id">@item.Title</option>
+                    }
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Cập nhật </button>
+            @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-primary back" })
+
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <ul class="list-group">
+                    <li class="list-group-item"><h4>Chuyên mục</h4></li>
+                    @foreach (var item in categories)
+                    {
+                        var check = item.Id == Model.ObjDetail.Category_Id ? "checked" : "";
+                        <li class="list-group-item d-flex">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0" @check name="Category" type="checkbox" value="@item.Id" aria-label="Checkbox for following text input">
+                            </div>
+                            <div class="ms-2 d-flex align-items-sm-center">
+                                <h5>@item.Name</h5>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const check = urlParams.get('check');
+    console.log(check);
+    if (check == "1") {
+        swal("Thành công!", {
+            icon: "success",
+        }).then(() => {
+            window.location.href = "#";
+        });
+    } else if (check == "0") {
+        swal("Có lỗi xảy ra!", {
+            icon: "error",
+        });
+    }
+    document.getElementById("Post").classList.add("text-active");
+
+</script>
+

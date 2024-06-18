@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.intro{
+    font-weight: 700;
+}
+
+.custom-button{
+    border: 2px solid #f60;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #f60;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.button-pagging {
+    border: 2px solid #ccc;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ccc;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.Active-link {
+    border: 2px solid #f60;
+}
+
+.text-active{
+    color: #f60 !important;
+}
+
+.rounded{
+    border-radius:16px !important;
+}
+
+button{
+    border:none;
+}
+
+.card-active{
+    background-color: #FFEFD5;
+}
+
+.custom-button-not-Active{
+    border: 2px solid #ccc;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ccc;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.number {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ccc;
+}
+.title {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1rem;
+    padding: 2px 5px;
+}
+
+.footer-mid{
+    background-color: #FFEFD5;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.reason{
+    min-height: 200px;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.border-right {
+    border-right: 2px solid #ccc; /* Đường kẻ dọc */
+    height: 100%;
+}
+.border-bottom {
+    border-bottom: 2px solid #000; /* Đường kẻ ngang */
+}
+.row-with-border {
+    display: flex;
+}
+.row-with-border > .col {
+    flex: 1;
+}
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em; /* Adjust according to line height to fit exactly 3 lines */
+    line-height: 1.5em; /* Line height (adjust as needed) */
+}
+
+h2.intro {
+    font-size: 2em; /* Adjust as needed */
+}
+
+h3.intro_child {
+    font-size: 1.5em; /* Adjust as needed */
+}
+
+
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+    h2.intro {
+        font-size: 1.5em; /* Adjust as needed */
+    }
+
+    h3.intro_child {
+        font-size: 1.2em; /* Adjust as needed */
+    }
+}
